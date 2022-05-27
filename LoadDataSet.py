@@ -7,4 +7,4 @@ print(sns.get_dataset_names())
 datasetName = input("Enter name of dataset to load : ")
 data = sns.load_dataset(datasetName)
 # convert dataset to csv format and load in current working directory
-data.to_csv("titanic.csv")
+data.to_csv("titanic.csv", header=False)
